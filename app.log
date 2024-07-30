@@ -58,3 +58,13 @@ Request method: POST
 Request content type: multipart/form-data
 Request files: ImmutableMultiDict([])
 No 'image' key in request.files
+Received a request
+Request method: POST
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
+No 'image' key in request.files
+Received a request
+Request method: POST
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
+No 'image' key in request.files
