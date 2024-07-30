@@ -1,20 +1,11 @@
-Failed to make prediction
 Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
 Model loaded successfully.
-Received a request
-Request method: POST
-Request content type: multipart/form-data; boundary=--------------------------411320348952766459659104
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
-Request form: ImmutableMultiDict([])
-Failed to make prediction
 Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
 Model loaded successfully.
-Received a request
-Request method: POST
-Request content type: multipart/form-data; boundary=--------------------------677314418596300541900578
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
-Request form: ImmutableMultiDict([])
-Failed to make prediction
+Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
+Model loaded successfully.
+Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
+Model loaded successfully.
 Received a request
 Request method: POST
 Request content type: multipart/form-data
@@ -23,120 +14,47 @@ Request form: ImmutableMultiDict([])
 No 'image' key in request.files
 Received a request
 Request method: POST
-Request content type: multipart/form-data; boundary=--------------------------224647360944570001774397
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
 Request form: ImmutableMultiDict([])
-Failed to make prediction
+No 'image' key in request.files
+Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
+Model loaded successfully.
 Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
 Model loaded successfully.
 Received a request
 Request method: POST
-Request content type: multipart/form-data; boundary=--------------------------865126307199121697607346
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
-Request form: ImmutableMultiDict([])
-Failed to make prediction
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------541330712654682709188894
-Failed to get result from model
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------162208268836120052360089
-Failed to get result from model
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------532038977824638804837671
-Failed to get result from model
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------711052037850493456045310
-Failed to get result from model
-Received a request
 Request content type: multipart/form-data
-No 'image' key in request.files
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Received a request
-Request content type: multipart/form-data
-No 'image' key in request.files
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Received a request
 Request files: ImmutableMultiDict([])
-Request form: ImmutableMultiDict([])
-Request content type: multipart/form-data
+No 'image' key in request.files
+Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
+Model loaded successfully.
 Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
 Model loaded successfully.
 Received a request
-Request files: ImmutableMultiDict([])
-Request form: ImmutableMultiDict([])
+Request method: POST
 Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
 No 'image' key in request.files
 Received a request
-Request files: ImmutableMultiDict([])
-Request form: ImmutableMultiDict([])
+Request method: POST
 Request content type: multipart/form-data
-No 'image' key in request.files
-Received a request
 Request files: ImmutableMultiDict([])
-Request form: ImmutableMultiDict([])
-Request content type: multipart/form-data
 No 'image' key in request.files
 Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
 Model loaded successfully.
 Received a request
-Request content type: multipart/form-data; boundary=--------------------------736402058389296721500980
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
-Request form: ImmutableMultiDict([])
-Error in predict_image: 'charmap' codec can't encode characters in position 18-37: character maps to <undefined>
-Failed to get result from model
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------253731232002168720948014
-Request files: ImmutableMultiDict([('image', <FileStorage: 'bird.jpeg' ('image/jpeg')>)])
-Request form: ImmutableMultiDict([])
-Error in predict_image: 'charmap' codec can't encode characters in position 18-37: character maps to <undefined>
-Failed to get result from model
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
-Received a request
-Error decoding base64 image: Invalid base64-encoded string: number of data characters (266993) cannot be 1 more than a multiple of 4
-Failed to decode base64 image
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
-Received a request
-Error decoding base64 image: Invalid base64-encoded string: number of data characters (266993) cannot be 1 more than a multiple of 4
-Failed to decode base64 image
-Received a request
-Error decoding base64 image: Invalid base64-encoded string: number of data characters (266993) cannot be 1 more than a multiple of 4
-Failed to decode base64 image
-Received a request
-Error decoding base64 image: Invalid base64-encoded string: number of data characters (266993) cannot be 1 more than a multiple of 4
-Failed to decode base64 image
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully.
-Received a request
-Request content type: multipart/form-data; boundary=--------------------------565856056325835131776931
-Failed to get result from model
-Received a request
-Request content type: application/json
+Request method: POST
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
 No 'image' key in request.files
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
 Received a request
-Error in predict_image: 'charmap' codec can't encode characters in position 18-37: character maps to <undefined>
-Failed to get result from model
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
+Request method: POST
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
+No 'image' key in request.files
 Received a request
-ValueError during prediction: 'charmap' codec can't encode characters in position 18-37: character maps to <undefined>
-Failed to get result from model
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
-Model file found: C:\Users\sevgi\OneDrive\Masaüstü\sayac\my_model.keras
-Model loaded successfully. Input shape: (None, 224, 224, 3)
+Request method: POST
+Request content type: multipart/form-data
+Request files: ImmutableMultiDict([])
+No 'image' key in request.files
