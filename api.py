@@ -1,5 +1,4 @@
 import os
-import cv2
 import numpy as np
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
@@ -34,12 +33,14 @@ def predict():
         prediction = model.predict(processed_image)
         result = prediction[0][0]
 
-        is_water_meter = result > 0.5
-        confidence = float(result) if is_water_meter else float(1 - result)
+        if result >= 0.5:
+            prediction_text = "Su sayacıdır"
+        else:
+            prediction_text = "Su sayacı değildir"
 
         return jsonify({
-            'is_water_meter': bool(is_water_meter),
-            'confidence': confidence
+            'prediction': prediction_text,
+            'confidence': float(result)
         })
 
     except Exception as e:

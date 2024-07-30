@@ -1,283 +1,397 @@
-1.jpg: Image is not a water meter.
-12.jpg: Image is not a water meter.
-14.jpg: Image is not a water meter.
-6.jpg: Image is not a water meter.
+01 (4).JPG: Image is a water meter.
+02 (4).jpg: Image is a water meter.
+03 (4).jpg: Image is not a water meter.
+07.jpg: Image is not a water meter.
+09.jpg: Image is not a water meter.
+1 (2).jpg: Image is not a water meter.
+10 (5).jpg: Image is not a water meter.
+10 (7).jpg: Image is not a water meter.
+10.jpg: Image is not a water meter.
+11 (6).jpg: Image is not a water meter.
+12 (2).jpg: Image is not a water meter.
+12 (5).jpg: Image is not a water meter.
+12 (6).jpg: Image is not a water meter.
+12 (7).jpg: Image is not a water meter.
+13 (3).jpg: Image is not a water meter.
+13 (6).jpg: Image is not a water meter.
+13 (8).jpg: Image is not a water meter.
+14 (4).jpg: Image is not a water meter.
+14 (5).jpg: Image is not a water meter.
+14 (7).jpg: Image is not a water meter.
+15 (3).jpg: Image is not a water meter.
+15 (4).jpg: Image is not a water meter.
+15 (5).jpg: Image is not a water meter.
+15.jpg: Image is not a water meter.
+16 (2).jpg: Image is not a water meter.
+16 (6).jpg: Image is a water meter.
+16.jpg: Image is a water meter.
+18 (4).jpg: Image is not a water meter.
+19 (3).jpg: Image is not a water meter.
+19 (4).jpg: Image is not a water meter.
+19 (5).jpg: Image is a water meter.
+20 (3).jpg: Image is not a water meter.
+20.jpg: Image is not a water meter.
+22 (6).JPG: Image is not a water meter.
+22.jpg: Image is not a water meter.
+23 (2).jpg: Image is not a water meter.
+23 (4).jpg: Image is not a water meter.
+23.jpg: Image is not a water meter.
+25 (4).jpg: Image is not a water meter.
+25.jpg: Image is not a water meter.
+29 (6).jpg: Image is not a water meter.
+29.JPG: Image is not a water meter.
+30 (5).jpg: Image is not a water meter.
+30.jpg: Image is not a water meter.
+31.jpg: Image is not a water meter.
+32 (2).jpg: Image is not a water meter.
+34 (5).jpg: Image is not a water meter.
+36 (2).jpg: Image is not a water meter.
+38 (2).jpg: Image is not a water meter.
+38 (3).jpg: Image is not a water meter.
+38 (4).jpg: Image is not a water meter.
+38 (5).jpg: Image is not a water meter.
+38.jpg: Image is not a water meter.
+39 (2).jpg: Image is not a water meter.
+4.jpg: Image is a water meter.
+40 (4).jpg: Image is not a water meter.
+42 (4).jpg: Image is not a water meter.
+43 (3).jpg: Image is not a water meter.
+43 (4).jpg: Image is not a water meter.
+5 (2).jpg: Image is not a water meter.
+5 (4).jpg: Image is not a water meter.
+5 (5).jpg: Image is not a water meter.
+50.jpg: Image is not a water meter.
+52.JPG: Image is not a water meter.
+54 (2).jpg: Image is not a water meter.
+54.jpg: Image is not a water meter.
+58 (2).jpg: Image is not a water meter.
+58 (3).jpg: Image is not a water meter.
+58.jpg: Image is not a water meter.
+59 (2).jpg: Image is not a water meter.
+6 (2).jpg: Image is not a water meter.
+6 (4).jpg: Image is not a water meter.
+60 (2).jpg: Image is a water meter.
+60.jpg: Image is not a water meter.
+61 (3).jpg: Image is not a water meter.
+61.jpg: Image is not a water meter.
+62.jpg: Image is a water meter.
+65.jpg: Image is not a water meter.
+7 (5).jpg: Image is not a water meter.
 7.jpg: Image is not a water meter.
-bird.jpg: Image is not a water meter.
-image11 (2).jpeg: Image is not a water meter.
-image14 (2).jpeg: Image is not a water meter.
+73.jpeg: Image is not a water meter.
+75.jpeg: Image is not a water meter.
+8 (4).jpg: Image is not a water meter.
+8.jpf.jpg: Image is not a water meter.
+9.jpg: Image is a water meter.
+aug-1-02 (3).jpg: Image is not a water meter.
+aug-100-08 (2).jpg: Image is not a water meter.
+aug-101-10.jpg: Image is not a water meter.
+aug-11-16.jpg: Image is not a water meter.
+aug-15-22 (2).jpg: Image is not a water meter.
+aug-16-24 (2).jpg: Image is not a water meter.
+aug-16-24.jpg: Image is not a water meter.
+aug-18-23.jpg: Image is not a water meter.
+aug-2-03.jpg: Image is not a water meter.
+aug-21-25.jpg: Image is not a water meter.
+aug-23-29.jpg: Image is not a water meter.
+aug-27-33.jpg: Image is not a water meter.
+aug-3-05.jpg: Image is not a water meter.
+aug-30-36.jpg: Image is not a water meter.
+aug-36-49.jpg: Image is not a water meter.
+aug-40-53.jpg: Image is not a water meter.
+aug-41-54.jpg: Image is not a water meter.
+aug-46-59.jpg: Image is not a water meter.
+aug-46-61.jpg: Image is not a water meter.
+aug-47-61.jpg: Image is not a water meter.
+aug-48-62.jpg: Image is not a water meter.
+aug-50-04.jpg: Image is not a water meter.
+aug-58-75.jpeg: Image is not a water meter.
+aug-59-17.jpg: Image is not a water meter.
+aug-6-08 (2).jpg: Image is not a water meter.
+aug-6-08.jpg: Image is not a water meter.
+aug-61-21.jpg: Image is not a water meter.
+aug-64-25.jpg: Image is not a water meter.
+aug-66-28.jpg: Image is not a water meter.
+aug-68-08.jpg: Image is not a water meter.
+aug-7-08.jpg: Image is not a water meter.
+aug-72-35.jpg: Image is not a water meter.
+aug-75-38.jpg: Image is not a water meter.
+aug-76-23.jpg: Image is not a water meter.
+aug-78-25.jpg: Image is not a water meter.
+aug-79-43.jpg: Image is not a water meter.
+aug-81-46.jpg: Image is not a water meter.
+aug-82-47.jpg: Image is a water meter.
+aug-84-33.jpg: Image is not a water meter.
+aug-84-50.jpg: Image is not a water meter.
+aug-87-53.jpg: Image is not a water meter.
+aug-88-35.jpg: Image is not a water meter.
+aug-92-58.jpg: Image is not a water meter.
+aug-97-04.jpg: Image is not a water meter.
+image12.jpeg: Image is a water meter.
 image15 (2).jpeg: Image is not a water meter.
-image15.jpeg: Image is not a water meter.
-image16 (2).jpeg: Image is not a water meter.
-image16.jpeg: Image is not a water meter.
-image17 (2).jpeg: Image is not a water meter.
-image17.jpeg: Image is not a water meter.
-image18.jpeg: Image is not a water meter.
-image3 (2).jpeg: Image is not a water meter.
-image3.jpeg: Image is not a water meter.
-image4 (2).jpeg: Image is not a water meter.
-image5 (2).jpeg: Image is not a water meter.
-image8.jpeg: Image is not a water meter.
-image9 (2).jpeg: Image is not a water meter.
-sky.jpg: Image is not a water meter.
-1000018164.jpg: Image is not a water meter.
-1000022373.jpg: Image is not a water meter.
-1000022710.jpg: Image is not a water meter.
-1000023085.jpg: Image is not a water meter.
-1000039994.jpg: Image is not a water meter.
-1000041427.jpg: Image is not a water meter.
-1000044094.jpg: Image is not a water meter.
-1000045114.jpg: Image is not a water meter.
-1000045211.jpg: Image is not a water meter.
-1000047540.jpg: Image is not a water meter.
-1000050044.jpg: Image is not a water meter.
-1000055242.jpg: Image is not a water meter.
-1000064832.jpg: Image is not a water meter.
-1000065996.jpg: Image is not a water meter.
-1000080552.jpg: Image is not a water meter.
-1000100435.jpg: Image is not a water meter.
-1000103871.jpg: Image is not a water meter.
-1000108852.jpg: Image is not a water meter.
-1000117146.jpg: Image is not a water meter.
-11.jpeg: Image is not a water meter.
-1357280_mesken.jpg: Image is not a water meter.
-14061.jpg: Image is not a water meter.
-16685ff8-892d-4a35-b9f7-1c21dffbf138.jpeg: Image is not a water meter.
-1717427042492.jpg: Image is not a water meter.
-17177842092405455485633790943638.jpg: Image is not a water meter.
-1718120713526..jpg: Image is not a water meter.
-17190634867275229098600903829455.jpg: Image is not a water meter.
-17200018587843931985985367225253.jpg: Image is not a water meter.
-17204507266791578005175772645175.jpg: Image is not a water meter.
-17206937088732358610038755116886.jpg: Image is not a water meter.
-17208572645338881400305772124200.jpg: Image is not a water meter.
-17211361007924946352734392597668.jpg: Image is not a water meter.
-17214664575662682338362916966469.jpg: Image is not a water meter.
-1721808242752..jpg: Image is not a water meter.
-17219903680724923907037636633428.jpg: Image is not a water meter.
-17221493863671503338538035669068.jpg: Image is not a water meter.
-17222002098612710953879529687789.jpg: Image is not a water meter.
-20240605_153641.jpg: Image is not a water meter.
-20240606_191517.jpg: Image is not a water meter.
-20240608_100809.jpg: Image is not a water meter.
-20240611_110733.jpg: Image is not a water meter.
-20240613_085801.jpg: Image is not a water meter.
-20240613_111423.jpg: Image is not a water meter.
-20240622_165731.jpg: Image is not a water meter.
-20240625_092001.jpg: Image is not a water meter.
-20240626_125755.jpg: Image is not a water meter.
-20240628_154149.jpg: Image is not a water meter.
-20240629_181413.jpg: Image is not a water meter.
-20240629_192003.jpg: Image is not a water meter.
-20240630_200823.jpg: Image is not a water meter.
-20240703_151954.jpg: Image is not a water meter.
-20240708_130111.jpg: Image is not a water meter.
-20240711_190048.jpg: Image is not a water meter.
-20240714_152714.jpg: Image is not a water meter.
-20240720_165007.jpg: Image is not a water meter.
-20240724_111139.jpg: Image is not a water meter.
-20240727_134716.jpg: Image is not a water meter.
-249161abonesusaati.jpeg: Image is not a water meter.
-26d977d3-be6f-483b-b58c-169bdee1ad1f.jpg: Image is not a water meter.
-32231de4-3a7f-4bb3-889d-7b33df438100.jpg: Image is not a water meter.
-324982-.jpg: Image is not a water meter.
-3ae2c18c-8a62-4951-b4a2-449c32e3903d.jpg: Image is not a water meter.
-3f062b1c-c440-45f0-9b4d-9554be31eb71.jpeg: Image is not a water meter.
-3fa2269a-1d76-4cd0-bf97-e3502c5679ac.jpg: Image is not a water meter.
-4050c887-cd97-4290-9976-0ee0e4521523.jpeg: Image is not a water meter.
-5420_sayac.jpg: Image is not a water meter.
-6-2.jpeg: Image is not a water meter.
-6d9eb226-732a-43b1-aa49-6999185b5a76.jpg: Image is not a water meter.
-749d170e-af2c-4648-a3d0-ef7b3cb043ab.jpg: Image is not a water meter.
-7a3c4c46-1a94-4243-a3fb-44f458cdb41b.jpg: Image is not a water meter.
-84add63f-6ec7-4deb-bbdd-0af9ab33bcee.jpg: Image is not a water meter.
-85a00188-2b56-4ca0-8bc0-008aeb0b9d65.jpeg: Image is not a water meter.
-9a514f5e-dc53-46f3-bf01-74ed56c05342.jpeg: Image is not a water meter.
-a7da190d-93b6-4e49-8964-a06a09a025d9.jpg: Image is not a water meter.
-a99ff523-cd33-473a-8f91-3a6e9b9f1a6c.jpg: Image is not a water meter.
-abone__211361.jpg: Image is not a water meter.
-b2.jpg: Image is not a water meter.
-b902e98f-a05e-484c-9d24-cba8d21a04a3.jpg: Image is not a water meter.
-b9f0066d-e0d1-4877-8382-a48f9ffa9c22.jpg: Image is not a water meter.
-bc7bc0cd-d7cc-4489-83e5-64a0d3fb139b.jpg: Image is not a water meter.
-bef2d9f0-e362-45a4-a433-6c32115aac21.jpg: Image is not a water meter.
-d25b02dc-ac6e-4c20-9070-48247228a061.jpg: Image is not a water meter.
-dc4f820c-9fb7-41f4-ad3f-94ab9630c523.jpg: Image is not a water meter.
-dcd3bea5-ae7e-44cc-9a68-19df49d94973.jpg: Image is not a water meter.
-e40e2cbb-85c3-483b-81de-82ac5c51e15d.jpeg: Image is not a water meter.
-e4896648-a0f0-422e-87ac-3a08183cd309.jpeg: Image is not a water meter.
-f057c13e-21ee-4b61-a665-d0925a119444.jpg: Image is not a water meter.
-f7a1b001-e9f8-4e80-a705-fca35999ec91.jpg: Image is not a water meter.
-fat_duzelt_12.06.jpeg: Image is not a water meter.
-fbd92e26-a39b-4727-a846-3eb4226b9840.jpg: Image is not a water meter.
-ffcc2fd5-cb39-4f9d-a687-a3ca1072157f.jpg: Image is not a water meter.
-image (15).jpg: Image is not a water meter.
-image (19).jpg: Image is not a water meter.
-image (20).jpg: Image is not a water meter.
-image (37).jpg: Image is not a water meter.
-image (43).jpg: Image is not a water meter.
-image (44).jpg: Image is not a water meter.
-image (46).jpg: Image is not a water meter.
-image (47).jpg: Image is not a water meter.
-image (5).jpg: Image is not a water meter.
-image (6).jpg: Image is not a water meter.
-image-03a04518-991d-4b5a-8ee4-58a2750a50cb.jpg: Image is not a water meter.
-image-0ae4649a-ee58-4eb2-8ac6-d472413d6096.jpg: Image is not a water meter.
-image-0c9c5f22-7872-429e-a2b4-32bd2817157d.jpg: Image is not a water meter.
-image-115aa132-bdca-4e8f-931b-87aee0c2dd8b.jpg: Image is not a water meter.
-image-12be510b-1efd-4d0f-8b69-76a6a5ffeae0.jpg: Image is not a water meter.
-image-1b6d6334-ab51-4452-a5b0-978bf69041aa.jpg: Image is not a water meter.
-image-202613e4-e215-4276-acdc-6a3e6ac41b1d.jpg: Image is not a water meter.
-image-228cafeb-2017-4c86-b9c1-d389ef7287a0.jpg: Image is not a water meter.
-image-2412c46c-9f46-4155-a99e-1d5bc4392672.jpg: Image is not a water meter.
-image-2480b699-e8e3-47bb-895d-0717b521f3bf.jpg: Image is not a water meter.
-image-2578f362-a08f-4aaf-bc2b-b7489f35ff8d.jpg: Image is not a water meter.
-image-25f1d2cd-a0c5-4448-8e4a-6973a86608ca.jpg: Image is not a water meter.
-image-26fe1233-ada2-487f-ac56-047cf54b3580.jpg: Image is not a water meter.
-image-28c03d37-9e4a-4d91-818d-844a3e4bf297.jpg: Image is not a water meter.
-image-2ee7f55b-825c-4bee-a297-d86d3f0423d0.jpg: Image is not a water meter.
-image-304cdc47-efa2-4aa5-9cbb-c6b3304bf729.jpg: Image is not a water meter.
-image-33a0d6e3-13a7-403e-8598-9bf73cc8ad4e.jpg: Image is not a water meter.
-image-39d22ad1-1abd-45d1-9bf4-05ea9c907dd2.jpg: Image is not a water meter.
-image-3cbbf429-6e93-4b01-be1d-98a27297b07a.jpg: Image is not a water meter.
-image-43d99107-8875-4d3d-a913-47bc58b956a6.jpg: Image is not a water meter.
-image-44452522-97a1-4337-b734-3cb2dab4be51.jpg: Image is not a water meter.
-image-448dc427-a1df-4525-a5e3-3c7454dd152a.jpg: Image is not a water meter.
-image-49cd4df8-980e-4017-8a8d-2b27ea91d88b.jpg: Image is not a water meter.
-image-49d36f55-07b6-4d6a-8f6d-949c7824d42b.jpg: Image is not a water meter.
-image-53c4b15d-d79e-483b-a876-9a2a00fecc0f.jpg: Image is not a water meter.
-image-5787e98f-3e19-4ff5-a4aa-819c6f2ac9ee.jpg: Image is not a water meter.
-image-59b380d9-3718-4336-ae9e-62e9084390bb.jpg: Image is not a water meter.
-image-5e7db1dd-4c09-42af-b592-9071cf2513ce.jpg: Image is not a water meter.
-image-629792de-7a4f-48da-af2d-54a90b50aa94.jpg: Image is not a water meter.
-image-65ee64b8-8789-456a-9ddf-6257eb9f8329.jpg: Image is not a water meter.
-image-7676fce5-c12c-42ce-8920-2e448507cc7f.jpg: Image is not a water meter.
-image-7706da3a-212d-4748-b712-3b44038f4b4e.jpg: Image is not a water meter.
-image-7d2cb557-0590-46ac-be86-81dd2fe3dff4.jpg: Image is not a water meter.
-image-7f87f5b2-d0dc-4639-911d-9019f294d429.jpg: Image is not a water meter.
-image-84ca976d-6d6b-40ac-889f-36f48caedba0.jpg: Image is not a water meter.
-image-861f2d48-ff6d-4ab2-97d8-513f96fbc1a3.jpg: Image is not a water meter.
-image-87793d56-1f99-4c58-ac6a-d9904b85cf6c.jpg: Image is not a water meter.
-image-9e4ad95a-1832-4e7a-81ad-9ac798a8b718.jpg: Image is not a water meter.
-image-a084ab0a-7d40-4314-9e27-bad6bc8ed71c.jpg: Image is not a water meter.
-image-a0b3bf53-11a7-4b28-a388-63fad09fe844.jpg: Image is not a water meter.
-image-a1c8ce72-a620-4418-afe5-f948fdf88b67.jpg: Image is not a water meter.
-image-a4318690-f93d-41dd-8a49-9eea11f9eb42.jpg: Image is not a water meter.
-image-a5106887-fc32-4daf-8b50-0c2a89419337.jpg: Image is not a water meter.
-image-a70a6689-cbdb-49c6-9ac8-4ba3070f25b6.jpg: Image is not a water meter.
-image-a7deeb40-1708-4c9d-9156-f28d297192f6.jpg: Image is not a water meter.
-image-a95dc5ff-257c-4ca4-99a9-8237a59df568.jpg: Image is not a water meter.
-image-ab744eba-5891-4d9f-8174-f5b169654e12.jpg: Image is not a water meter.
-image-b467e264-24db-4256-9ca9-12f03e61cd2a.jpg: Image is not a water meter.
-image-b62da183-dd5c-4a53-8c52-5a5c4a50bd9d.jpg: Image is not a water meter.
-image-b81c560b-4cf7-43b4-99f3-a265b96ba601.jpg: Image is not a water meter.
-image-b84b3d14-6df1-45c0-802b-be9679edc6bd.jpg: Image is not a water meter.
-image-c0db8f8f-bb2b-4ebd-87f0-5a0f396ca46a.jpg: Image is not a water meter.
-image-c113aad4-f52e-420b-b9d6-744484b192d6.jpg: Image is not a water meter.
-image-c987aeda-aac3-439c-98d2-10df5d401385.jpg: Image is not a water meter.
-image-caf8a91e-0512-4b02-b46a-9bb552221c14.jpg: Image is not a water meter.
-image-ce4378ab-c782-4b8d-b57e-19accb6ca5ec.jpg: Image is not a water meter.
-image-d8ff683d-1357-4cfe-8aae-9a26f73c2141.jpg: Image is not a water meter.
-image-dc510421-413c-436f-95b0-902947f3f50c.jpg: Image is not a water meter.
-image-df88221c-8047-4020-8401-9a8caf011506.jpg: Image is not a water meter.
-image-dff065a2-3a26-473d-9d48-4b9ae649e543.jpg: Image is not a water meter.
-image-e25cdc9c-f041-4666-ba3a-e7da92e4eccd.jpg: Image is not a water meter.
-image-e4e09a15-3ea1-4932-a951-8f09f042e668.jpg: Image is not a water meter.
-image-ec01b26c-bfa1-4749-af50-1ee019132f5e.jpg: Image is not a water meter.
-image-ee8b6575-708c-4cd8-85ca-006f7c13eaef.jpg: Image is not a water meter.
-image-f1d83f42-0d13-4d3f-abf3-13e8a62b5f7d.jpg: Image is not a water meter.
-image11.jpeg: Image is not a water meter.
-image13.jpeg: Image is not a water meter.
-image13.jpg: Image is not a water meter.
-image14 (2).jpg: Image is not a water meter.
-image15.jpeg: Image is not a water meter.
-image15.jpg: Image is not a water meter.
-image17.jpg: Image is not a water meter.
-image2.jpg: Image is not a water meter.
-image20.jpg: Image is not a water meter.
-image3.jpg: Image is not a water meter.
-image4.jpeg: Image is not a water meter.
+image18.jpeg: Image is a water meter.
+image3.jpeg: Image is a water meter.
+image5.jpeg: Image is a water meter.
 image7.jpeg: Image is not a water meter.
-img-20240417-wa0000.jpg: Image is not a water meter.
-img-20240607-wa0014.jpg: Image is not a water meter.
-img-20240610-wa0006.jpg: Image is not a water meter.
-img-20240628-wa0003 (1).jpg: Image is not a water meter.
-img-20240628-wa0003.jpg: Image is not a water meter.
-img-20240629-wa0003.jpg: Image is not a water meter.
-img-20240630-wa0000.jpg: Image is not a water meter.
-img-20240630-wa0001 (1).jpg: Image is not a water meter.
-img-20240702-wa0000.jpg: Image is not a water meter.
-img-20240703-wa0016.jpg: Image is not a water meter.
-img-20240711-wa0009.jpg: Image is not a water meter.
-img-20240717-wa0004.jpg: Image is not a water meter.
-img20240602001900.jpg: Image is not a water meter.
-img20240603122550.jpg: Image is not a water meter.
-img20240611181655.jpg: Image is not a water meter.
-img20240615110910.jpg: Image is not a water meter.
-img20240717204157.jpg: Image is not a water meter.
-img_1176.jpeg: Image is not a water meter.
-img_1414.jpeg: Image is not a water meter.
-img_1901.jpg: Image is not a water meter.
-img_20240601_140414.jpg: Image is not a water meter.
-img_20240603_175449.jpg: Image is not a water meter.
-img_20240606_181501.jpg: Image is not a water meter.
-img_20240609_132059.jpg: Image is not a water meter.
-img_20240609_204519.jpg: Image is not a water meter.
-img_20240610_123730.jpg: Image is not a water meter.
-img_20240610_134126.jpg: Image is not a water meter.
-img_20240615_140358.jpg: Image is not a water meter.
-img_20240616_093246.jpg: Image is not a water meter.
-img_20240617_142004.jpg: Image is not a water meter.
-img_20240624_205228.jpg: Image is not a water meter.
-img_20240627_070847_311.jpg: Image is not a water meter.
-img_20240627_200530.jpg: Image is not a water meter.
-img_20240629_161302_638.jpg: Image is not a water meter.
-img_20240703_100218.jpg: Image is not a water meter.
-img_20240712_095539.jpg: Image is not a water meter.
-img_20240712_194615.jpg: Image is not a water meter.
-img_20240714_172248.jpg: Image is not a water meter.
-img_20240718_144050.jpg: Image is not a water meter.
-img_2301.heic: Image is not a water meter.
-img_2327.heic: Image is not a water meter.
-img_2400.heic: Image is not a water meter.
-img_3135.jpeg: Image is not a water meter.
-img_3291.heic: Image is not a water meter.
-img_3294.heic: Image is not a water meter.
-img_3722.jpeg: Image is not a water meter.
-img_5297.jpeg: Image is not a water meter.
-img_5769.jpeg: Image is not a water meter.
-img_6382.jpeg: Image is not a water meter.
-img_7423.heic: Image is not a water meter.
-img_8815.jpeg: Image is not a water meter.
-img_9114.jpg: Image is not a water meter.
-img_9363.heic: Image is not a water meter.
-img_9594.heic: Image is not a water meter.
-img_9965.jpeg: Image is not a water meter.
-konya_ev_temmuz_2024_su_sayaci_8_temmuz_2024.jpeg: Image is not a water meter.
-koski (3).jpg: Image is not a water meter.
-koski_su.jpg: Image is not a water meter.
-p40612-163626.jpg: Image is not a water meter.
-sayac._on_tarafi.jpg: Image is not a water meter.
+image8 (2).jpeg: Image is a water meter.
+1000018164.jpg: Image is a water meter.
+1000022373.jpg: Image is a water meter.
+1000022710.jpg: Image is a water meter.
+1000023085.jpg: Image is a water meter.
+1000039994.jpg: Image is a water meter.
+1000041427.jpg: Image is a water meter.
+1000044094.jpg: Image is a water meter.
+1000045114.jpg: Image is a water meter.
+1000045211.jpg: Image is a water meter.
+1000047540.jpg: Image is a water meter.
+1000050044.jpg: Image is a water meter.
+1000055242.jpg: Image is a water meter.
+1000064832.jpg: Image is a water meter.
+1000065996.jpg: Image is a water meter.
+1000080552.jpg: Image is a water meter.
+1000100435.jpg: Image is a water meter.
+1000103871.jpg: Image is a water meter.
+1000108852.jpg: Image is a water meter.
+1000117146.jpg: Image is a water meter.
+11.jpeg: Image is a water meter.
+1357280_mesken.jpg: Image is a water meter.
+14061.jpg: Image is a water meter.
+16685ff8-892d-4a35-b9f7-1c21dffbf138.jpeg: Image is a water meter.
+1717427042492.jpg: Image is a water meter.
+17177842092405455485633790943638.jpg: Image is a water meter.
+1718120713526..jpg: Image is a water meter.
+17190634867275229098600903829455.jpg: Image is a water meter.
+17200018587843931985985367225253.jpg: Image is a water meter.
+17204507266791578005175772645175.jpg: Image is a water meter.
+17206937088732358610038755116886.jpg: Image is a water meter.
+17208572645338881400305772124200.jpg: Image is a water meter.
+17211361007924946352734392597668.jpg: Image is a water meter.
+17214664575662682338362916966469.jpg: Image is a water meter.
+1721808242752..jpg: Image is a water meter.
+17219903680724923907037636633428.jpg: Image is a water meter.
+17221493863671503338538035669068.jpg: Image is a water meter.
+17222002098612710953879529687789.jpg: Image is a water meter.
+20240605_153641.jpg: Image is a water meter.
+20240606_191517.jpg: Image is a water meter.
+20240608_100809.jpg: Image is a water meter.
+20240611_110733.jpg: Image is a water meter.
+20240613_085801.jpg: Image is a water meter.
+20240613_111423.jpg: Image is a water meter.
+20240622_165731.jpg: Image is a water meter.
+20240625_092001.jpg: Image is a water meter.
+20240626_125755.jpg: Image is a water meter.
+20240628_154149.jpg: Image is a water meter.
+20240629_181413.jpg: Image is a water meter.
+20240629_192003.jpg: Image is a water meter.
+20240630_200823.jpg: Image is a water meter.
+20240703_151954.jpg: Image is a water meter.
+20240708_130111.jpg: Image is a water meter.
+20240711_190048.jpg: Image is a water meter.
+20240714_152714.jpg: Image is a water meter.
+20240720_165007.jpg: Image is a water meter.
+20240724_111139.jpg: Image is a water meter.
+20240727_134716.jpg: Image is a water meter.
+249161abonesusaati.jpeg: Image is a water meter.
+26d977d3-be6f-483b-b58c-169bdee1ad1f.jpg: Image is a water meter.
+32231de4-3a7f-4bb3-889d-7b33df438100.jpg: Image is a water meter.
+324982-.jpg: Image is a water meter.
+3ae2c18c-8a62-4951-b4a2-449c32e3903d.jpg: Image is a water meter.
+3f062b1c-c440-45f0-9b4d-9554be31eb71.jpeg: Image is a water meter.
+3fa2269a-1d76-4cd0-bf97-e3502c5679ac.jpg: Image is a water meter.
+4050c887-cd97-4290-9976-0ee0e4521523.jpeg: Image is a water meter.
+5420_sayac.jpg: Image is a water meter.
+6-2.jpeg: Image is a water meter.
+6d9eb226-732a-43b1-aa49-6999185b5a76.jpg: Image is a water meter.
+749d170e-af2c-4648-a3d0-ef7b3cb043ab.jpg: Image is a water meter.
+7a3c4c46-1a94-4243-a3fb-44f458cdb41b.jpg: Image is a water meter.
+84add63f-6ec7-4deb-bbdd-0af9ab33bcee.jpg: Image is a water meter.
+85a00188-2b56-4ca0-8bc0-008aeb0b9d65.jpeg: Image is a water meter.
+9a514f5e-dc53-46f3-bf01-74ed56c05342.jpeg: Image is a water meter.
+a7da190d-93b6-4e49-8964-a06a09a025d9.jpg: Image is a water meter.
+a99ff523-cd33-473a-8f91-3a6e9b9f1a6c.jpg: Image is a water meter.
+abone__211361.jpg: Image is a water meter.
+b2.jpg: Image is a water meter.
+b902e98f-a05e-484c-9d24-cba8d21a04a3.jpg: Image is a water meter.
+b9f0066d-e0d1-4877-8382-a48f9ffa9c22.jpg: Image is a water meter.
+bc7bc0cd-d7cc-4489-83e5-64a0d3fb139b.jpg: Image is a water meter.
+bef2d9f0-e362-45a4-a433-6c32115aac21.jpg: Image is a water meter.
+d25b02dc-ac6e-4c20-9070-48247228a061.jpg: Image is a water meter.
+dc4f820c-9fb7-41f4-ad3f-94ab9630c523.jpg: Image is a water meter.
+dcd3bea5-ae7e-44cc-9a68-19df49d94973.jpg: Image is a water meter.
+e40e2cbb-85c3-483b-81de-82ac5c51e15d.jpeg: Image is a water meter.
+e4896648-a0f0-422e-87ac-3a08183cd309.jpeg: Image is a water meter.
+f057c13e-21ee-4b61-a665-d0925a119444.jpg: Image is a water meter.
+f7a1b001-e9f8-4e80-a705-fca35999ec91.jpg: Image is a water meter.
+fat_duzelt_12.06.jpeg: Image is a water meter.
+fbd92e26-a39b-4727-a846-3eb4226b9840.jpg: Image is a water meter.
+ffcc2fd5-cb39-4f9d-a687-a3ca1072157f.jpg: Image is a water meter.
+image (15).jpg: Image is a water meter.
+image (19).jpg: Image is a water meter.
+image (20).jpg: Image is a water meter.
+image (37).jpg: Image is a water meter.
+image (43).jpg: Image is a water meter.
+image (44).jpg: Image is a water meter.
+image (46).jpg: Image is a water meter.
+image (47).jpg: Image is a water meter.
+image (5).jpg: Image is a water meter.
+image (6).jpg: Image is a water meter.
+image-03a04518-991d-4b5a-8ee4-58a2750a50cb.jpg: Image is a water meter.
+image-0ae4649a-ee58-4eb2-8ac6-d472413d6096.jpg: Image is a water meter.
+image-0c9c5f22-7872-429e-a2b4-32bd2817157d.jpg: Image is a water meter.
+image-115aa132-bdca-4e8f-931b-87aee0c2dd8b.jpg: Image is a water meter.
+image-12be510b-1efd-4d0f-8b69-76a6a5ffeae0.jpg: Image is a water meter.
+image-1b6d6334-ab51-4452-a5b0-978bf69041aa.jpg: Image is a water meter.
+image-202613e4-e215-4276-acdc-6a3e6ac41b1d.jpg: Image is a water meter.
+image-228cafeb-2017-4c86-b9c1-d389ef7287a0.jpg: Image is a water meter.
+image-2412c46c-9f46-4155-a99e-1d5bc4392672.jpg: Image is a water meter.
+image-2480b699-e8e3-47bb-895d-0717b521f3bf.jpg: Image is a water meter.
+image-2578f362-a08f-4aaf-bc2b-b7489f35ff8d.jpg: Image is a water meter.
+image-25f1d2cd-a0c5-4448-8e4a-6973a86608ca.jpg: Image is a water meter.
+image-26fe1233-ada2-487f-ac56-047cf54b3580.jpg: Image is a water meter.
+image-28c03d37-9e4a-4d91-818d-844a3e4bf297.jpg: Image is a water meter.
+image-2ee7f55b-825c-4bee-a297-d86d3f0423d0.jpg: Image is a water meter.
+image-304cdc47-efa2-4aa5-9cbb-c6b3304bf729.jpg: Image is a water meter.
+image-33a0d6e3-13a7-403e-8598-9bf73cc8ad4e.jpg: Image is a water meter.
+image-39d22ad1-1abd-45d1-9bf4-05ea9c907dd2.jpg: Image is a water meter.
+image-3cbbf429-6e93-4b01-be1d-98a27297b07a.jpg: Image is a water meter.
+image-43d99107-8875-4d3d-a913-47bc58b956a6.jpg: Image is a water meter.
+image-44452522-97a1-4337-b734-3cb2dab4be51.jpg: Image is a water meter.
+image-448dc427-a1df-4525-a5e3-3c7454dd152a.jpg: Image is a water meter.
+image-49cd4df8-980e-4017-8a8d-2b27ea91d88b.jpg: Image is a water meter.
+image-49d36f55-07b6-4d6a-8f6d-949c7824d42b.jpg: Image is a water meter.
+image-53c4b15d-d79e-483b-a876-9a2a00fecc0f.jpg: Image is a water meter.
+image-5787e98f-3e19-4ff5-a4aa-819c6f2ac9ee.jpg: Image is a water meter.
+image-59b380d9-3718-4336-ae9e-62e9084390bb.jpg: Image is a water meter.
+image-5e7db1dd-4c09-42af-b592-9071cf2513ce.jpg: Image is a water meter.
+image-629792de-7a4f-48da-af2d-54a90b50aa94.jpg: Image is a water meter.
+image-65ee64b8-8789-456a-9ddf-6257eb9f8329.jpg: Image is a water meter.
+image-7676fce5-c12c-42ce-8920-2e448507cc7f.jpg: Image is a water meter.
+image-7706da3a-212d-4748-b712-3b44038f4b4e.jpg: Image is a water meter.
+image-7d2cb557-0590-46ac-be86-81dd2fe3dff4.jpg: Image is a water meter.
+image-7f87f5b2-d0dc-4639-911d-9019f294d429.jpg: Image is a water meter.
+image-84ca976d-6d6b-40ac-889f-36f48caedba0.jpg: Image is a water meter.
+image-861f2d48-ff6d-4ab2-97d8-513f96fbc1a3.jpg: Image is a water meter.
+image-87793d56-1f99-4c58-ac6a-d9904b85cf6c.jpg: Image is a water meter.
+image-9e4ad95a-1832-4e7a-81ad-9ac798a8b718.jpg: Image is a water meter.
+image-a084ab0a-7d40-4314-9e27-bad6bc8ed71c.jpg: Image is a water meter.
+image-a0b3bf53-11a7-4b28-a388-63fad09fe844.jpg: Image is a water meter.
+image-a1c8ce72-a620-4418-afe5-f948fdf88b67.jpg: Image is a water meter.
+image-a4318690-f93d-41dd-8a49-9eea11f9eb42.jpg: Image is a water meter.
+image-a5106887-fc32-4daf-8b50-0c2a89419337.jpg: Image is a water meter.
+image-a70a6689-cbdb-49c6-9ac8-4ba3070f25b6.jpg: Image is a water meter.
+image-a7deeb40-1708-4c9d-9156-f28d297192f6.jpg: Image is a water meter.
+image-a95dc5ff-257c-4ca4-99a9-8237a59df568.jpg: Image is a water meter.
+image-ab744eba-5891-4d9f-8174-f5b169654e12.jpg: Image is a water meter.
+image-b467e264-24db-4256-9ca9-12f03e61cd2a.jpg: Image is a water meter.
+image-b62da183-dd5c-4a53-8c52-5a5c4a50bd9d.jpg: Image is a water meter.
+image-b81c560b-4cf7-43b4-99f3-a265b96ba601.jpg: Image is a water meter.
+image-b84b3d14-6df1-45c0-802b-be9679edc6bd.jpg: Image is a water meter.
+image-c0db8f8f-bb2b-4ebd-87f0-5a0f396ca46a.jpg: Image is a water meter.
+image-c113aad4-f52e-420b-b9d6-744484b192d6.jpg: Image is a water meter.
+image-c987aeda-aac3-439c-98d2-10df5d401385.jpg: Image is a water meter.
+image-caf8a91e-0512-4b02-b46a-9bb552221c14.jpg: Image is a water meter.
+image-ce4378ab-c782-4b8d-b57e-19accb6ca5ec.jpg: Image is a water meter.
+image-d8ff683d-1357-4cfe-8aae-9a26f73c2141.jpg: Image is a water meter.
+image-dc510421-413c-436f-95b0-902947f3f50c.jpg: Image is a water meter.
+image-df88221c-8047-4020-8401-9a8caf011506.jpg: Image is a water meter.
+image-dff065a2-3a26-473d-9d48-4b9ae649e543.jpg: Image is not a water meter.
+image-e25cdc9c-f041-4666-ba3a-e7da92e4eccd.jpg: Image is a water meter.
+image-e4e09a15-3ea1-4932-a951-8f09f042e668.jpg: Image is a water meter.
+image-ec01b26c-bfa1-4749-af50-1ee019132f5e.jpg: Image is a water meter.
+image-ee8b6575-708c-4cd8-85ca-006f7c13eaef.jpg: Image is a water meter.
+image-f1d83f42-0d13-4d3f-abf3-13e8a62b5f7d.jpg: Image is a water meter.
+image11.jpeg: Image is a water meter.
+image13.jpeg: Image is a water meter.
+image13.jpg: Image is a water meter.
+image14 (2).jpg: Image is a water meter.
+image15.jpeg: Image is a water meter.
+image15.jpg: Image is a water meter.
+image17.jpg: Image is a water meter.
+image2.jpg: Image is a water meter.
+image20.jpg: Image is a water meter.
+image3.jpg: Image is a water meter.
+image4.jpeg: Image is a water meter.
+image7.jpeg: Image is a water meter.
+img-20240417-wa0000.jpg: Image is a water meter.
+img-20240607-wa0014.jpg: Image is a water meter.
+img-20240610-wa0006.jpg: Image is a water meter.
+img-20240628-wa0003 (1).jpg: Image is a water meter.
+img-20240628-wa0003.jpg: Image is a water meter.
+img-20240629-wa0003.jpg: Image is a water meter.
+img-20240630-wa0000.jpg: Image is a water meter.
+img-20240630-wa0001 (1).jpg: Image is a water meter.
+img-20240702-wa0000.jpg: Image is a water meter.
+img-20240703-wa0016.jpg: Image is a water meter.
+img-20240711-wa0009.jpg: Image is a water meter.
+img-20240717-wa0004.jpg: Image is a water meter.
+img20240602001900.jpg: Image is a water meter.
+img20240603122550.jpg: Image is a water meter.
+img20240611181655.jpg: Image is a water meter.
+img20240615110910.jpg: Image is a water meter.
+img20240717204157.jpg: Image is a water meter.
+img_1176.jpeg: Image is a water meter.
+img_1414.jpeg: Image is a water meter.
+img_1901.jpg: Image is a water meter.
+img_20240601_140414.jpg: Image is a water meter.
+img_20240603_175449.jpg: Image is a water meter.
+img_20240606_181501.jpg: Image is a water meter.
+img_20240609_132059.jpg: Image is a water meter.
+img_20240609_204519.jpg: Image is a water meter.
+img_20240610_123730.jpg: Image is a water meter.
+img_20240610_134126.jpg: Image is a water meter.
+img_20240615_140358.jpg: Image is a water meter.
+img_20240616_093246.jpg: Image is a water meter.
+img_20240617_142004.jpg: Image is a water meter.
+img_20240624_205228.jpg: Image is a water meter.
+img_20240627_070847_311.jpg: Image is a water meter.
+img_20240627_200530.jpg: Image is a water meter.
+img_20240629_161302_638.jpg: Image is a water meter.
+img_20240703_100218.jpg: Image is a water meter.
+img_20240712_095539.jpg: Image is a water meter.
+img_20240712_194615.jpg: Image is a water meter.
+img_20240714_172248.jpg: Image is a water meter.
+img_20240718_144050.jpg: Image is a water meter.
+img_2301.heic: Image is a water meter.
+img_2327.heic: Image is a water meter.
+img_2400.heic: Image is a water meter.
+img_3135.jpeg: Image is a water meter.
+img_3291.heic: Image is a water meter.
+img_3294.heic: Image is a water meter.
+img_3722.jpeg: Image is a water meter.
+img_5297.jpeg: Image is a water meter.
+img_5769.jpeg: Image is a water meter.
+img_6382.jpeg: Image is a water meter.
+img_7423.heic: Image is a water meter.
+img_8815.jpeg: Image is a water meter.
+img_9114.jpg: Image is a water meter.
+img_9363.heic: Image is a water meter.
+img_9594.heic: Image is a water meter.
+img_9965.jpeg: Image is a water meter.
+konya_ev_temmuz_2024_su_sayaci_8_temmuz_2024.jpeg: Image is a water meter.
+koski (3).jpg: Image is a water meter.
+koski_su.jpg: Image is a water meter.
+p40612-163626.jpg: Image is a water meter.
+sayac._on_tarafi.jpg: Image is a water meter.
 screenshot_2024-06-06-19-47-34-653_com.miui.gallery.jpg: Image is not a water meter.
-screenshot_2024-06-15-15-28-54-659_com.whatsapp.jpg: Image is not a water meter.
-screenshot_2024-07-14-10-55-43-086_com.whatsapp.jpg: Image is not a water meter.
-screenshot_20240611-152226.png: Image is not a water meter.
-screenshot_20240624-213312_photos.jpg: Image is not a water meter.
-su_fa.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-06-04_saat_20.45.37_d185cfd7.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-06-13_saat_12.16.16_bd4a83f0.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-06-13_saat_18.00.43_3790f61d.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-07-02_saat_13.13.29_54cf3339.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-07-04_saat_12.14.10_46662971.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-07-23_saat_13.48.32_ad2b7262.jpg: Image is not a water meter.
-whatsapp_gorsel_2024-07-29_saat_09.26.16_f46123a8.jpg: Image is not a water meter.
-whatsapp_image_2024-06-03_at_08.12.28.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-04_at_13.07.39.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-09_at_12.49.08.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-12_at_17.40.59.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-18_at_13.04.36_(1).jpeg: Image is not a water meter.
-whatsapp_image_2024-06-26_at_09.38.31.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-26_at_14.41.48.jpeg: Image is not a water meter.
-whatsapp_image_2024-06-27_at_11.02.49.jpeg: Image is not a water meter.
-whatsapp_image_2024-07-06_at_16.16.29.jpeg: Image is not a water meter.
-whatsapp_image_2024-07-11_at_12.45.45.jpeg: Image is not a water meter.
+screenshot_2024-06-15-15-28-54-659_com.whatsapp.jpg: Image is a water meter.
+screenshot_2024-07-14-10-55-43-086_com.whatsapp.jpg: Image is a water meter.
+screenshot_20240611-152226.png: Image is a water meter.
+screenshot_20240624-213312_photos.jpg: Image is a water meter.
+su_fa.jpg: Image is a water meter.
+whatsapp_gorsel_2024-06-04_saat_20.45.37_d185cfd7.jpg: Image is a water meter.
+whatsapp_gorsel_2024-06-13_saat_12.16.16_bd4a83f0.jpg: Image is a water meter.
+whatsapp_gorsel_2024-06-13_saat_18.00.43_3790f61d.jpg: Image is a water meter.
+whatsapp_gorsel_2024-07-02_saat_13.13.29_54cf3339.jpg: Image is a water meter.
+whatsapp_gorsel_2024-07-04_saat_12.14.10_46662971.jpg: Image is a water meter.
+whatsapp_gorsel_2024-07-23_saat_13.48.32_ad2b7262.jpg: Image is a water meter.
+whatsapp_gorsel_2024-07-29_saat_09.26.16_f46123a8.jpg: Image is a water meter.
+whatsapp_image_2024-06-03_at_08.12.28.jpeg: Image is a water meter.
+whatsapp_image_2024-06-04_at_13.07.39.jpeg: Image is a water meter.
+whatsapp_image_2024-06-09_at_12.49.08.jpeg: Image is a water meter.
+whatsapp_image_2024-06-12_at_17.40.59.jpeg: Image is a water meter.
+whatsapp_image_2024-06-18_at_13.04.36_(1).jpeg: Image is a water meter.
+whatsapp_image_2024-06-26_at_09.38.31.jpeg: Image is a water meter.
+whatsapp_image_2024-06-26_at_14.41.48.jpeg: Image is a water meter.
+whatsapp_image_2024-06-27_at_11.02.49.jpeg: Image is a water meter.
+whatsapp_image_2024-07-06_at_16.16.29.jpeg: Image is a water meter.
+whatsapp_image_2024-07-11_at_12.45.45.jpeg: Image is a water meter.
