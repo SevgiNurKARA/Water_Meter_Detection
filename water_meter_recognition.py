@@ -3,10 +3,8 @@ import numpy as np
 import os
 import tensorflow as tf
 from tensorflow.keras.models import load_model
-import matplotlib.pyplot as plt
-import seaborn as sns
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc, precision_recall_curve, f1_score
+from sklearn.metrics import roc_curve, auc, precision_recall_curve, f1_score, classification_report, confusion_matrix
 import logging
 
 # Configure logging
@@ -46,18 +44,6 @@ def evaluate_model(model, test_generator):
         optimal_idx_roc = np.argmax(j_scores)
         optimal_threshold_roc = roc_thresholds[optimal_idx_roc]
 
-        # ROC curve plot
-        plt.figure(figsize=(10, 5))
-        plt.subplot(1, 2, 1)
-        plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC curve (AUC = {roc_auc:.2f})')
-        plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
-        plt.xlim([0.0, 1.0])
-        plt.ylim([0.0, 1.05])
-        plt.xlabel('False Positive Rate')
-        plt.ylabel('True Positive Rate')
-        plt.title('Receiver Operating Characteristic (ROC) Curve')
-        plt.legend(loc="lower right")
-
         # Precision-Recall Curve
         precision, recall, pr_thresholds = precision_recall_curve(test_labels, predictions)
 
@@ -65,16 +51,6 @@ def evaluate_model(model, test_generator):
         f1_scores = 2 * (precision * recall) / (precision + recall)
         optimal_idx_pr = np.argmax(f1_scores)
         optimal_threshold_pr = pr_thresholds[optimal_idx_pr]
-
-        # Precision-Recall curve plot
-        plt.subplot(1, 2, 2)
-        plt.plot(recall, precision, color='blue', lw=2)
-        plt.xlabel('Recall')
-        plt.ylabel('Precision')
-        plt.title('Precision-Recall Curve')
-
-        plt.tight_layout()
-        plt.show()
 
         print(f"Optimal threshold from ROC curve: {optimal_threshold_roc:.4f}")
         print(f"Optimal threshold from PR curve: {optimal_threshold_pr:.4f}")
@@ -93,14 +69,13 @@ def evaluate_model(model, test_generator):
         print(classification_report(test_labels, predicted_classes))
 
         cm = confusion_matrix(test_labels, predicted_classes)
-        plt.figure(figsize=(8, 6))
-        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
-        plt.title('Confusion Matrix')
-        plt.ylabel('True label')
-        plt.xlabel('Predicted label')
-        plt.show()
+        print("Confusion Matrix:")
+        print(cm)
+
+        return final_threshold
     except Exception as e:
         logger.error(f"Error during evaluation: {e}")
+        return None
 
 def preprocess_image(image_path):
     if not os.path.exists(image_path):
@@ -177,18 +152,19 @@ def main():
     )
 
     # Evaluate model and find optimal threshold
-    evaluate_model(model, test_generator)
+    final_threshold = evaluate_model(model, test_generator)
+    
+    with open('threshold.txt', 'w') as f:
+        f.write(str(final_threshold))
 
-    # Use the final threshold from evaluate_model
-    final_threshold = 0.5  # You should replace this with the threshold you got from evaluate_model
+    if final_threshold is not None:
+        results = process_images(model, test_images_folder, final_threshold)
 
-    results = process_images(model, test_images_folder, final_threshold)
+        with open('results.txt', 'w') as f:
+            for image_name, label in results:
+                f.write(f"{image_name}: {label}\n")
 
-    with open('results.txt', 'w') as f:
-        for image_name, label in results:
-            f.write(f"{image_name}: {label}\n")
-
-    print("Prediction results have been saved to 'results.txt'.")
+        print("Prediction results have been saved to 'results.txt'.")
 
 if __name__ == "__main__":
     main()

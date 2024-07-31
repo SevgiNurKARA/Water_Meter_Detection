@@ -28,13 +28,13 @@
 18 (4).jpg: Image is not a water meter.
 19 (3).jpg: Image is not a water meter.
 19 (4).jpg: Image is not a water meter.
-19 (5).jpg: Image is a water meter.
+19 (5).jpg: Image is not a water meter.
 20 (3).jpg: Image is not a water meter.
 20.jpg: Image is not a water meter.
 22 (6).JPG: Image is not a water meter.
 22.jpg: Image is not a water meter.
 23 (2).jpg: Image is not a water meter.
-23 (4).jpg: Image is not a water meter.
+23 (4).jpg: Image is a water meter.
 23.jpg: Image is not a water meter.
 25 (4).jpg: Image is not a water meter.
 25.jpg: Image is not a water meter.
@@ -132,7 +132,7 @@ image15 (2).jpeg: Image is not a water meter.
 image18.jpeg: Image is a water meter.
 image3.jpeg: Image is a water meter.
 image5.jpeg: Image is a water meter.
-image7.jpeg: Image is not a water meter.
+image7.jpeg: Image is a water meter.
 image8 (2).jpeg: Image is a water meter.
 1000018164.jpg: Image is a water meter.
 1000022373.jpg: Image is a water meter.
@@ -257,7 +257,7 @@ image-3cbbf429-6e93-4b01-be1d-98a27297b07a.jpg: Image is a water meter.
 image-43d99107-8875-4d3d-a913-47bc58b956a6.jpg: Image is a water meter.
 image-44452522-97a1-4337-b734-3cb2dab4be51.jpg: Image is a water meter.
 image-448dc427-a1df-4525-a5e3-3c7454dd152a.jpg: Image is a water meter.
-image-49cd4df8-980e-4017-8a8d-2b27ea91d88b.jpg: Image is a water meter.
+image-49cd4df8-980e-4017-8a8d-2b27ea91d88b.jpg: Image is not a water meter.
 image-49d36f55-07b6-4d6a-8f6d-949c7824d42b.jpg: Image is a water meter.
 image-53c4b15d-d79e-483b-a876-9a2a00fecc0f.jpg: Image is a water meter.
 image-5787e98f-3e19-4ff5-a4aa-819c6f2ac9ee.jpg: Image is a water meter.
@@ -287,7 +287,7 @@ image-b62da183-dd5c-4a53-8c52-5a5c4a50bd9d.jpg: Image is a water meter.
 image-b81c560b-4cf7-43b4-99f3-a265b96ba601.jpg: Image is a water meter.
 image-b84b3d14-6df1-45c0-802b-be9679edc6bd.jpg: Image is a water meter.
 image-c0db8f8f-bb2b-4ebd-87f0-5a0f396ca46a.jpg: Image is a water meter.
-image-c113aad4-f52e-420b-b9d6-744484b192d6.jpg: Image is a water meter.
+image-c113aad4-f52e-420b-b9d6-744484b192d6.jpg: Image is not a water meter.
 image-c987aeda-aac3-439c-98d2-10df5d401385.jpg: Image is a water meter.
 image-caf8a91e-0512-4b02-b46a-9bb552221c14.jpg: Image is a water meter.
 image-ce4378ab-c782-4b8d-b57e-19accb6ca5ec.jpg: Image is a water meter.

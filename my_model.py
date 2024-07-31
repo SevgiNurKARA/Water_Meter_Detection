@@ -5,6 +5,8 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropou
 import os
 import shutil
 from sklearn.model_selection import train_test_split
+from sklearn.utils import class_weight
+import numpy as np
 
 # Veri seti yolunu belirleyin
 data_dir = 'data_dir'
@@ -59,6 +61,18 @@ validation_generator = val_datagen.flow_from_directory(
     class_mode='binary'
 )
 
+# Sınıf ağırlıklarını hesaplayın
+train_labels = np.array([0] * len(os.listdir(os.path.join(train_dir, 'not_water_meter'))) + 
+                        [1] * len(os.listdir(os.path.join(train_dir, 'water_meter'))))
+
+class_weights = class_weight.compute_class_weight(
+    class_weight='balanced',
+    classes=np.unique(train_labels),
+    y=train_labels
+)
+
+class_weights = {0: class_weights[0], 1: class_weights[1]}
+
 # Model oluşturma
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
@@ -82,34 +96,9 @@ history = model.fit(
     steps_per_epoch=train_generator.samples // 32,
     epochs=20,
     validation_data=validation_generator,
-    validation_steps=validation_generator.samples // 32
+    validation_steps=validation_generator.samples // 32,
+    class_weight=class_weights
 )
 
 # Modeli kaydetme
 model.save('my_model.keras')
-
-# Model eğitimi sürecini görselleştirme
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(12, 4))
-
-# Accuracy
-plt.subplot(1, 2, 1)
-plt.plot(history.history['accuracy'], label='Training Accuracy')
-plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
-plt.title('Model Accuracy')
-plt.xlabel('Epoch')
-plt.ylabel('Accuracy')
-plt.legend()
-
-# Loss
-plt.subplot(1, 2, 2)
-plt.plot(history.history['loss'], label='Training Loss')
-plt.plot(history.history['val_loss'], label='Validation Loss')
-plt.title('Model Loss')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()
-
-plt.tight_layout()
-plt.show()
