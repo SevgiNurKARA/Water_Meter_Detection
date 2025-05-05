@@ -57,8 +57,7 @@ def preprocess_image(image, target_size=(224, 224)):
 
 def extract_features(img):
     """
-    Su sayacı özelliklerini çıkaran fonksiyon 
-    (model.py'dan alındı ve API için uyarlandı)
+    Su sayacı özelliklerini çıkaran geliştirilmiş fonksiyon
     """
     features = {}
     
@@ -66,27 +65,20 @@ def extract_features(img):
         # Görüntü boyutunu küçült
         img = cv2.resize(img, (224, 224))
         
-        # 1. Mavi renk tespiti - Su sayaçları genellikle mavi-turkuaz tonlarında
-        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-        
-        # Daha net mavi tonu için ayarlanmış değerler (su sayacı mavisi)
-        lower_blue = np.array([100, 70, 50])   # Daha doygun maviler
-        upper_blue = np.array([130, 255, 255]) # Su sayacı mavisi 
-        
-        blue_mask = cv2.inRange(hsv, lower_blue, upper_blue)
-        blue_ratio = np.sum(blue_mask > 0) / (img.shape[0] * img.shape[1])
-        features['blue_ratio'] = float(blue_ratio)
-        
-        # 2. Temel görüntü özellikleri
+        # 1. Temel görüntü özellikleri
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         features['brightness'] = float(np.mean(gray))
         features['contrast'] = float(np.std(gray))
         
-        # 3. Basitleştirilmiş kenar tespiti
-        edges = cv2.Canny(gray, 100, 200)
-        features['edge_density'] = float(np.sum(edges > 0) / (img.shape[0] * img.shape[1]))
+        # 2. Mavi renk tespiti - Su sayaçları genellikle mavi tonlar içerir
+        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        lower_blue = np.array([100, 50, 50])
+        upper_blue = np.array([130, 255, 255])
+        blue_mask = cv2.inRange(hsv, lower_blue, upper_blue)
+        blue_ratio = np.sum(blue_mask > 0) / (img.shape[0] * img.shape[1])
+        features['blue_ratio'] = float(blue_ratio)
         
-        # 4. Dairesel şekil tespiti
+        # 3. Dairesel şekil tespiti - Su sayaçları genellikle dairesel şekillere sahiptir
         blur = cv2.GaussianBlur(gray, (5, 5), 0)
         circles = cv2.HoughCircles(
             blur, cv2.HOUGH_GRADIENT, dp=1, minDist=50,
@@ -94,42 +86,76 @@ def extract_features(img):
         )
         
         # Daire sayısı
-        circle_count = 0 if circles is None else len(circles[0])
-        features['circle_count'] = circle_count
+        if circles is not None:
+            features['circle_count'] = len(circles[0])
+            # En büyük daireyi bul
+            max_radius = 0
+            for circle in circles[0]:
+                if circle[2] > max_radius:
+                    max_radius = circle[2]
+            features['max_circle_radius'] = float(max_radius / min(img.shape[0], img.shape[1]))
+        else:
+            features['circle_count'] = 0
+            features['max_circle_radius'] = 0.0
         
-        # 5. Sayısal karakter tespiti (Su sayaçlarında mutlaka rakamlar vardır)
-        # Görüntüyü 3x3 ızgaraya böl
-        h, w = gray.shape
-        cell_h, cell_w = h // 3, w // 3
+        # 4. Kenar tespiti (detay seviyesi)
+        edges = cv2.Canny(gray, 100, 200)
+        edge_density = np.sum(edges > 0) / (img.shape[0] * img.shape[1])
+        features['edge_density'] = float(edge_density)
         
-        # Merkez bölgelerde detay olup olmadığını kontrol et
-        center_edges = edges[cell_h:2*cell_h, cell_w:2*cell_w]
-        center_edge_density = np.sum(center_edges > 0) / (cell_h * cell_w)
-        features['center_edge_density'] = float(center_edge_density)
+        # 5. Rakam tespiti için görüntü işleme - Su sayaçlarında rakamlar bulunur
+        # Adaptif eşikleme ile rakam benzeri bölgeleri belirginleştirme
+        thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
+                                     cv2.THRESH_BINARY_INV, 11, 2)
         
-        # 6. Doku analizi 
-        texture_kernel = np.ones((5,5), np.float32) / 25
-        local_std = np.zeros_like(gray, dtype=np.float32)
+        # Morfolojik işlemler ile gürültüyü azalt
+        kernel = np.ones((3,3), np.uint8)
+        thresh = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel)
         
-        # Gri seviye varyansını hesapla (yerel doku ölçümü)
-        mean_img = cv2.filter2D(gray.astype(np.float32), -1, texture_kernel)
-        mean_sq_img = cv2.filter2D(np.square(gray.astype(np.float32)), -1, texture_kernel)
-        local_std = np.sqrt(np.maximum(0, mean_sq_img - np.square(mean_img)))
+        # Kontur bulma
+        contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         
-        # Ortalama doku pürüzlülüğü 
-        texture_roughness = np.mean(local_std)
-        features['texture_roughness'] = float(texture_roughness)
+        # Küçük konturları filtrele - potansiyel rakam adayları
+        digit_candidates = []
+        for cnt in contours:
+            x, y, w, h = cv2.boundingRect(cnt)
+            aspect_ratio = float(w) / h if h > 0 else 0
+            
+            # Rakam benzeri şekiller genellikle belirli bir boyut ve oran aralığında olur
+            if 8 < w < 40 and 20 < h < 60 and 0.2 < aspect_ratio < 0.9:
+                digit_candidates.append((x, y, w, h))
+        
+        features['digit_count'] = len(digit_candidates)
+        
+        # 6. Dijital gösterge bölgesi tespiti
+        # Yatay olarak sıralanmış rakam benzeri şekilleri kontrol et (su sayacı göstergesi)
+        if len(digit_candidates) > 2:
+            digit_candidates.sort(key=lambda x: x[0])  # X koordinatına göre sırala
+            horizontal_aligned = 0
+            
+            for i in range(len(digit_candidates)-1):
+                x1, y1, w1, h1 = digit_candidates[i]
+                x2, y2, w2, h2 = digit_candidates[i+1]
+                
+                # Yatay hizalama kontrolü - y koordinatları yaklaşık aynı, x koordinatları ardışık
+                if abs(y1 - y2) < h1 * 0.5 and 0 < (x2 - (x1 + w1)) < w1 * 2:
+                    horizontal_aligned += 1
+            
+            features['horizontal_digit_alignment'] = horizontal_aligned
+        else:
+            features['horizontal_digit_alignment'] = 0
         
     except Exception as e:
         print(f"Özellik çıkarma hatası: {e}")
         features = {
-            'blue_ratio': 0, 
-            'brightness': 0, 
-            'contrast': 0, 
-            'edge_density': 0,
+            'brightness': 0,
+            'contrast': 0,
+            'blue_ratio': 0,
             'circle_count': 0,
-            'center_edge_density': 0,
-            'texture_roughness': 0
+            'max_circle_radius': 0.0,
+            'edge_density': 0,
+            'digit_count': 0,
+            'horizontal_digit_alignment': 0
         }
     
     return features
@@ -146,10 +172,6 @@ def predict():
             return jsonify({
                 'error': 'Model yüklenemedi. Lütfen daha sonra tekrar deneyin.'
             }), 500
-    
-    # Eşik değeri parametresi (varsayılan: 0.7 - daha yüksek spesifiklik için)
-    # Kullanıcı isterse farklı bir eşik değeri belirleyebilir
-    confidence_threshold = request.args.get('threshold', default=0.7, type=float)
     
     # Dosya var mı kontrol et
     if 'image' not in request.files:
@@ -176,48 +198,54 @@ def predict():
         # Tahmin yap
         prediction = model.predict(processed_img, verbose=0)[0][0]
         
-        # SU SAYACI TANIMLAMA KRİTERLERİ - Daha katı kurallar
+        # GELİŞTİRİLMİŞ KARAR ALGORİTMASI
+        # 1. Temel su sayacı özellikleri kontrolü
+        has_circle = features['circle_count'] >= 1
+        has_reasonable_edges = 0.05 < features['edge_density'] < 0.3
+        has_digits = features['digit_count'] >= 3
+        has_aligned_digits = features['horizontal_digit_alignment'] >= 1
         
-        # 1. Model güven değeri yeterince yüksek olmalı
-        model_confidence = prediction > confidence_threshold
+        # 2. Su sayacı değerlendirmesi - puanlama sistemi
+        score = 0
+        if has_circle:
+            score += 1
+        if has_reasonable_edges:
+            score += 1
+        if has_digits:
+            score += 1
+        if has_aligned_digits:
+            score += 2  # Yatay hizalanmış rakamlar çok önemli bir özellik
+        if features['blue_ratio'] > 0.01:  # Az da olsa mavi renk varsa
+            score += 1
+        if features['max_circle_radius'] > 0.2:  # Büyük daire varsa (gösterge)
+            score += 1
         
-        # 2. Su sayacı için gerekli kriterler
-        has_circular_shape = features['circle_count'] >= 1
-        has_digital_display = features['center_edge_density'] > 0.15
-        has_moderate_edges = 0.1 < features['edge_density'] < 0.3
-        
-        # 3. Su sayacı renk şartları (ya mavi içermeli ya da gri tonlarında olmalı)
-        has_specific_color = features['blue_ratio'] > 0.05
-        is_grayscale_device = (features['contrast'] > 40 and features['brightness'] < 150)
-        
-        # 4. Doku şartları - Su sayaçları genellikle belirli seviyede doku detayına sahiptir
-        has_proper_texture = 10 < features['texture_roughness'] < 30
-        
-        # TÜM KRİTERLER BİRLEŞTİRİLEREK SONUÇ ÜRETİLİYOR
-        # Kriterlerin hepsi sağlanırsa su sayacı olarak değerlendirilir
-        is_water_meter = (
-            model_confidence and 
-            has_circular_shape and 
-            has_digital_display and 
-            has_moderate_edges and
-            has_proper_texture and
-            (has_specific_color or is_grayscale_device)
+        # Su sayacı olması için kesin koşullar (bunlar yoksa puan ne olursa olsun sayaç değil)
+        critical_features = (
+            (features['circle_count'] >= 1) and                  # En az 1 daire olmalı
+            (0.05 < features['edge_density'] < 0.35) and         # Belirli bir edge density aralığı
+            (prediction > 0.65) and                              # Model tahmini yeterince güçlü olmalı
+            (features['digit_count'] >= 3) and                   # En az 3 potansiyel rakam içermeli
+            (features['horizontal_digit_alignment'] >= 1 or      # Ya yatay hizalanmış rakamlar olmalı
+             features['blue_ratio'] > 0.01)                      # Ya da su sayacı mavi renk içermeli
         )
+        
+        # 3. Su sayacı kararı - model tahmini ve yeterli özellik puanı
+        # Minimum 4 puan (7 üzerinden) VE kritik özelliklerin varlığı
+        is_water_meter = score >= 4 and critical_features
         
         # Sonuçları hazırla
         result = {
             'is_water_meter': bool(is_water_meter),
-            'confidence': float(prediction),
-            'applied_threshold': confidence_threshold,
+            'raw_prediction': float(prediction),
             'features': features,
-            'decision_factors': {
-                'model_confidence': bool(model_confidence),
-                'has_circular_shape': bool(has_circular_shape),
-                'has_digital_display': bool(has_digital_display),
-                'has_moderate_edges': bool(has_moderate_edges),
-                'has_specific_color': bool(has_specific_color),
-                'is_grayscale_device': bool(is_grayscale_device),
-                'has_proper_texture': bool(has_proper_texture)
+            'score': score,
+            'analysis': {
+                'has_circle': bool(has_circle),
+                'has_reasonable_edges': bool(has_reasonable_edges),
+                'has_digits': bool(has_digits),
+                'has_aligned_digits': bool(has_aligned_digits),
+                'critical_features_met': bool(critical_features)
             }
         }
         
@@ -241,9 +269,6 @@ def predict_base64():
             return jsonify({
                 'error': 'Model yüklenemedi. Lütfen daha sonra tekrar deneyin.'
             }), 500
-    
-    # Eşik değeri parametresi (varsayılan: 0.7)
-    confidence_threshold = request.args.get('threshold', default=0.7, type=float)
     
     # JSON verisini kontrol et
     if not request.is_json:
@@ -276,47 +301,54 @@ def predict_base64():
         # Tahmin yap
         prediction = model.predict(processed_img, verbose=0)[0][0]
         
-        # SU SAYACI TANIMLAMA KRİTERLERİ - Daha katı kurallar
+        # GELİŞTİRİLMİŞ KARAR ALGORİTMASI
+        # 1. Temel su sayacı özellikleri kontrolü
+        has_circle = features['circle_count'] >= 1
+        has_reasonable_edges = 0.05 < features['edge_density'] < 0.3
+        has_digits = features['digit_count'] >= 3
+        has_aligned_digits = features['horizontal_digit_alignment'] >= 1
         
-        # 1. Model güven değeri yeterince yüksek olmalı
-        model_confidence = prediction > confidence_threshold
+        # 2. Su sayacı değerlendirmesi - puanlama sistemi
+        score = 0
+        if has_circle:
+            score += 1
+        if has_reasonable_edges:
+            score += 1
+        if has_digits:
+            score += 1
+        if has_aligned_digits:
+            score += 2  # Yatay hizalanmış rakamlar çok önemli bir özellik
+        if features['blue_ratio'] > 0.01:  # Az da olsa mavi renk varsa
+            score += 1
+        if features['max_circle_radius'] > 0.2:  # Büyük daire varsa (gösterge)
+            score += 1
         
-        # 2. Su sayacı için gerekli kriterler
-        has_circular_shape = features['circle_count'] >= 1
-        has_digital_display = features['center_edge_density'] > 0.15
-        has_moderate_edges = 0.1 < features['edge_density'] < 0.3
-        
-        # 3. Su sayacı renk şartları (ya mavi içermeli ya da gri tonlarında olmalı)
-        has_specific_color = features['blue_ratio'] > 0.05
-        is_grayscale_device = (features['contrast'] > 40 and features['brightness'] < 150)
-        
-        # 4. Doku şartları - Su sayaçları genellikle belirli seviyede doku detayına sahiptir
-        has_proper_texture = 10 < features['texture_roughness'] < 30
-        
-        # TÜM KRİTERLER BİRLEŞTİRİLEREK SONUÇ ÜRETİLİYOR
-        is_water_meter = (
-            model_confidence and 
-            has_circular_shape and 
-            has_digital_display and 
-            has_moderate_edges and
-            has_proper_texture and
-            (has_specific_color or is_grayscale_device)
+        # Su sayacı olması için kesin koşullar (bunlar yoksa puan ne olursa olsun sayaç değil)
+        critical_features = (
+            (features['circle_count'] >= 1) and                  # En az 1 daire olmalı
+            (0.05 < features['edge_density'] < 0.35) and         # Belirli bir edge density aralığı
+            (prediction > 0.65) and                              # Model tahmini yeterince güçlü olmalı
+            (features['digit_count'] >= 3) and                   # En az 3 potansiyel rakam içermeli
+            (features['horizontal_digit_alignment'] >= 1 or      # Ya yatay hizalanmış rakamlar olmalı
+             features['blue_ratio'] > 0.01)                      # Ya da su sayacı mavi renk içermeli
         )
+        
+        # 3. Su sayacı kararı - model tahmini ve yeterli özellik puanı
+        # Minimum 4 puan (7 üzerinden) VE kritik özelliklerin varlığı
+        is_water_meter = score >= 4 and critical_features
         
         # Sonuçları hazırla
         result = {
             'is_water_meter': bool(is_water_meter),
-            'confidence': float(prediction),
-            'applied_threshold': confidence_threshold,
+            'raw_prediction': float(prediction),
             'features': features,
-            'decision_factors': {
-                'model_confidence': bool(model_confidence),
-                'has_circular_shape': bool(has_circular_shape),
-                'has_digital_display': bool(has_digital_display),
-                'has_moderate_edges': bool(has_moderate_edges),
-                'has_specific_color': bool(has_specific_color),
-                'is_grayscale_device': bool(is_grayscale_device),
-                'has_proper_texture': bool(has_proper_texture)
+            'score': score,
+            'analysis': {
+                'has_circle': bool(has_circle),
+                'has_reasonable_edges': bool(has_reasonable_edges),
+                'has_digits': bool(has_digits),
+                'has_aligned_digits': bool(has_aligned_digits),
+                'critical_features_met': bool(critical_features)
             }
         }
         
